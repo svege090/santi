@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Recommended Perfumes</h2>
+<ul class="perfume-list">
+    {% for key, perfume in perfumes.items() %}
+    <li>
+        <a href="/perfume/{{ key }}">{{ perfume.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+<a class="button secondary" href="/">Back to Home</a>
+{% endblock %}
