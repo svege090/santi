@@ -1,0 +1,122 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #9ACBD0;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #006A71;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-logo {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+.button {
+    background-color: #48A6A7;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #006A71;
+}
+
+
+.perfume-list {
+    list-style: none;
+    padding: 0;
+}
+
+.perfume-list li {
+    background-color: white;
+    border: 1px solid #f86d72;
+    padding: 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+.button.secondary {
+    background-color: #48A6A7;
+    color: white;
+    border: 2px solid #48A6A7;
+}
+.button.secondary:hover {
+    background-color: #006A71;
+    color: white;
+}
+
+.result-message {
+    background-color: white;
+    border: 1px solid #f86d72;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.result-message blockquote {
+    font-style: italic;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #fff0f0;
+    border-left: 4px solid #f86d72;
+}
